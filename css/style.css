@@ -1,53 +1,119 @@
-/* DEBUG */
-.debug .row{
-  height: 150px;
-  line-height: 150px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.debug .row [class*="col-"]{
-  height: 100%;
-  background-color: pink;
-  border: 1px solid black;
-}
-
-.debug .row .row [class*="col-"]{
-  background-color: coral;
-  border: 1px solid red;
-  height: 30%;
-}
-
-.debug .row .row .row [class*="col-"]{
+.container{
+  width: 100%;
+  height: 100vh;
   background-color: lightblue;
-  border: 1px solid white;
-  height: 20%;
 }
-
-.debug .row .row{
-  padding: 5px;
-}
-
-
-.p-30{padding: 30px;}
-.p-t-100{padding-top: 100px;}
-.p-b-100{padding-bottom: 100px;}
-.f-size-40{font-size: 40px;}
-
-
-/* /DEBUG */
-
-
-
 
 
 /* MAIN */
+main{
+  height: calc(100% - 90px);
+  background-color: red;
+  display: flex;
+}
 
+.bigger-font{
+  font-size: 50px;
+}
+
+
+/* MENU */
+#menu{
+  height: 100%;
+  width: 250px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo{
+  height: 100px;
+  background-color: rgb(172, 79, 200);
+}
+
+/* /LOGO */
+
+
+/* PLAYLIST */
+.playlist{
+  min-height: 300px;
+  background-color: grey;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* /PLAYLIST */
+
+
+/* PROFILE */
+.profile{
+  height: 100px;
+  background-color: rgb(117, 131, 224);
+}
+
+/* /PROFILE */
+
+
+
+
+
+
+/* /MENU */
 
 
 /* /MAIN */
 
+/* MAIN CONTENT */
+#main-content{
+  /* background-color: #141922; */
+  background-color: lightblue;
+  width: calc(100% - 250px);
+  padding-top: 90px;
+  overflow-y: auto;
+}
+
+/* UPGRADE */
+.upgrade{
+  height: 90px;
+  width: calc(100% - 250px);
+  background-color: rgba(8, 11, 18, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+/* /UPGRADE */
+
+
+
+
+
+
+
+
+
+/* /MAIN CONTENT */
 
 
 /* FOOTER */
-
+footer{
+  width: 100%;
+  height: 90px;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
 
 /* /FOOTER */
