@@ -1,0 +1,53 @@
+/* DEBUG */
+.debug .row{
+  height: 150px;
+  line-height: 150px;
+}
+
+.debug .row [class*="col-"]{
+  height: 100%;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.debug .row .row [class*="col-"]{
+  background-color: coral;
+  border: 1px solid red;
+  height: 30%;
+}
+
+.debug .row .row .row [class*="col-"]{
+  background-color: lightblue;
+  border: 1px solid white;
+  height: 20%;
+}
+
+.debug .row .row{
+  padding: 5px;
+}
+
+
+.p-30{padding: 30px;}
+.p-t-100{padding-top: 100px;}
+.p-b-100{padding-bottom: 100px;}
+.f-size-40{font-size: 40px;}
+
+
+/* /DEBUG */
+
+
+
+
+
+/* MAIN */
+
+
+
+/* /MAIN */
+
+
+
+/* FOOTER */
+
+
+/* /FOOTER */
