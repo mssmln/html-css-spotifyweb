@@ -51,15 +51,18 @@ main{
 /* H S L */
 .h-s-l{
   background-color: rgb(100, 195, 71);
-  display: flex;
-  flex-direction: column;
 }
 
 .h-s-l img{
   max-width: 12%;
   margin: 4px 0 4px 15px;
+  vertical-align: middle;
 }
 
+.h-s-l h2{
+  vertical-align: middle;
+  display: inline-block;
+}
 /* /H S L */
 
 /* PLAYLIST */
