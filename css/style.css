@@ -10,11 +10,20 @@
   background-color: lightblue;
 }
 
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float-left{
+  float: left;
+}
+
 
 /* MAIN */
 main{
   height: calc(100% - 90px);
-  background-color: red;
   display: flex;
   font-family: 'Open Sans', sans-serif;
 }
@@ -95,6 +104,7 @@ main{
   margin: 0 8px 0 15px;
   padding: 12px;
   font-size: 22px;
+  vertical-align: middle;
 }
 .create-playlist{
   display: flex;
@@ -212,8 +222,7 @@ main{
 
 /* MAIN CONTENT */
 #main-content{
-  /* background-color: #141922; */
-  background-color: lightblue;
+  background-color: rgba(20, 25, 34, 0.8);
   width: calc(100% - 250px);
   padding-top: 90px;
   overflow-y: auto;
@@ -247,11 +256,67 @@ a.btn{
 
 /* /UPGRADE */
 
+/* MENU MAIN CONTENT */
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: rgba(20, 25, 34, 0.8);
+}
 
+.menu li{
+  padding: 15px;
+  color: rgb(84, 87, 93);
+  font-weight: 700;
+}
 
+.menu li::after{
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  visibility: hidden;
+}
 
+.menu li:hover{
+  cursor: pointer;
+}
 
+.menu li:hover::after{
+  visibility: visible;
+  background-color: #A5F22E;
+}
+/* /MENU MAIN CONTENT */
 
+/* RECENTLY PLAYED */
+.played{
+  margin-left: 30px;
+}
+.played h2{
+  color: white;
+  margin: 20px 0 30px 0;
+  font-weight: 700;
+}
+
+.played img{
+  width: 240px;
+  /* height: 200px; */
+}
+
+.music{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.songs{
+  display: flex;
+  flex-direction: column;
+}
+
+/* /RECENTLY PLAYED */
 
 
 
