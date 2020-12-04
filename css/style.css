@@ -20,12 +20,15 @@
   float: left;
 }
 
+.m-t-30{margin-top: 30px}
+
 
 /* MAIN */
 main{
   height: calc(100% - 90px);
   display: flex;
   font-family: 'Open Sans', sans-serif;
+  color: rgb(84, 87, 93);
 }
 
 .bigger-font{
@@ -222,7 +225,7 @@ main{
 
 /* MAIN CONTENT */
 #main-content{
-  background-color: rgba(20, 25, 34, 0.8);
+  background-color: rgb(20, 25, 34);
   width: calc(100% - 250px);
   padding-top: 90px;
   overflow-y: auto;
@@ -278,6 +281,7 @@ a.btn{
   width: 30px;
   height: 2px;
   visibility: hidden;
+  margin: auto;
 }
 
 .menu li:hover{
@@ -291,7 +295,8 @@ a.btn{
 /* /MENU MAIN CONTENT */
 
 /* RECENTLY PLAYED */
-.played{
+.played,
+.created-for{
   margin-left: 30px;
 }
 .played h2{
@@ -300,24 +305,78 @@ a.btn{
   font-weight: 700;
 }
 
-.played img{
+.played img,
+.created-list img{
   width: 240px;
   /* height: 200px; */
+  margin: auto;
 }
 
-.music{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.songs{
+.songs,
+.recommendation{
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: calc(100% / 6 - 15px); /* -15 perchè l'elemento inline-block si prende per conto suo dei margini */
+  margin-right: 15px;
+}
+
+.songs h4,
+.recommendation h4{
+  color: white;
+  margin: 15px 0 5px 0;
+}
+.songs p,
+.created-for p{
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+
+
+.play-btn:hover::before,
+.created-list:hover::before{
+  visibility: visible;
+}
+
+.play-btn::before,
+.created-list::before{
+  visibility: hidden;
+  color: white;
+  font-size: 60px;
+  content: '\f144';
+  display: block;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-btn,
+.created-list{
+  position: relative;
+  transition: 1s linear;
+}
+
+.play-btn:hover,
+.created-list:hover{
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* /RECENTLY PLAYED */
 
+/* CREATED FOR + NAME */
+.created-for h2{
+  color: white;
+  margin: 60px 0 10px 0;
+  font-weight: 700;
+}
+
+/* /CREATED FOR + NAME */
 
 
 /* /MAIN CONTENT */
@@ -334,3 +393,13 @@ footer{
 }
 
 /* /FOOTER */
+
+
+
+
+
+
+/* TRANSITIONS AND ANIMATIONS */
+
+
+/* /TRANSITIONS AND ANIMATIONS */

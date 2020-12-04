@@ -1,1 +1,4 @@
 opacity sulle img svg del menu di sinistra
+
+aggiustare margin di RECENTLY
+transition di songs prende tutto e non solo opacity
