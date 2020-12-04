@@ -21,6 +21,12 @@
 }
 
 .m-t-30{margin-top: 30px}
+.b-r-50{border-radius: 50%}
+.m-b-50{margin-bottom: 50px}
+.m-l-10{margin-left: 10px}
+.c-white{color: white}
+.c-grey{color: rgb(84, 87, 93)}
+.f-weight-700{font-weight: 700}
 
 
 /* MAIN */
@@ -296,7 +302,8 @@ a.btn{
 
 /* RECENTLY PLAYED */
 .played,
-.created-for{
+.created-for,
+.artists{
   margin-left: 30px;
 }
 .played h2{
@@ -307,9 +314,7 @@ a.btn{
 
 .played img,
 .created-list img{
-  width: 240px;
-  /* height: 200px; */
-  margin: auto;
+  width: 100%;
 }
 
 .songs,
@@ -327,7 +332,8 @@ a.btn{
   margin: 15px 0 5px 0;
 }
 .songs p,
-.created-for p{
+.created-for p,
+.artists p{
   font-weight: 700;
   text-transform: capitalize;
   font-size: 14px;
@@ -370,7 +376,8 @@ a.btn{
 /* /RECENTLY PLAYED */
 
 /* CREATED FOR + NAME */
-.created-for h2{
+.created-for h2,
+.artists h2{
   color: white;
   margin: 60px 0 10px 0;
   font-weight: 700;
@@ -384,22 +391,84 @@ a.btn{
 
 /* FOOTER */
 footer{
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 90px;
   background-color: green;
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
 }
 
+/* PREVIEW */
+.preview{
+  background-color: pink;
+  display: flex;
+  align-items: center;
+}
+
+.img img{
+  width: 55px;
+}
+
+/* .preview::after{
+  content: '\f004';
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  display: block;
+
+} */
+
+.name{
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.heart-folder{
+  padding-left: 40px;
+}
+
+.heart-folder i{
+  margin-right: 5px;
+}
+/* /PREVIEW */
+
+
+/* MINI PLAYER */
+
+.mini-player{
+  width: 50px;
+  background-color: gray;
+  flex-grow: 1;
+}
+
+ul.player-btn{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-btn li{
+  font-size: 20px;
+  color: white;
+  padding: 10px 10px 0 10px;
+}
+.player-btn li:nth-child(3){
+  font-size: 35px;
+}
+
+/* /MINI PLAYER */
+
+
+/* PLAYER SETTINGS */
+.player-settings{
+  width: 20%;
+  background-color: lightblue;
+}
+
+
+/* /PLAYER SETTINGS */
+
+
 /* /FOOTER */
-
-
-
-
-
-
-/* TRANSITIONS AND ANIMATIONS */
-
-
-/* /TRANSITIONS AND ANIMATIONS */
