@@ -1,3 +1,9 @@
 opacity sulle img svg del menu di sinistra
 
-concatenare più pseudo elemts vicini tra loro
+non si possono concatenare più pseudo elementi
+i numeri a fianchi della barra sono meglio con i pseudo o coi tag?
+
+flex wrap alla classe menu o alla media query?
+ho dato column alla classe heart-folder perchè con wrap non si abbassava a 768 ok?
+
+ok il tag title dentro la classe h-s-l?
