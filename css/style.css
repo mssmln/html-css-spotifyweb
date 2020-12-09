@@ -276,12 +276,15 @@ a.btn{
   border-radius: 20px;
   margin-right: 20px;
   font-weight: bold;
-  transition: all 1s;
-}
-a:hover{
-  transform: scale(3);
+  transition: 1s linear;
 }
 
+.upgrade a.btn:hover{
+  transform: scale(2);
+}
+/* .upgrade a.btn:hover{
+  font-size: large;
+} */
 /* /UPGRADE */
 
 /* MENU MAIN CONTENT */
@@ -330,7 +333,7 @@ a:hover{
   cursor: pointer;
 }
 
-.mq-center img:hover{
+.mq-center:hover img{
   opacity: 1;
   cursor: pointer;
 }
