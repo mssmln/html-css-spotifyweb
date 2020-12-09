@@ -255,7 +255,8 @@ main{
 
 /* UPGRADE */
 .upgrade{
-  height: 90px;
+  /* height: 90px; */
+  padding: 25px;
   width: calc(100% - 250px);
   background-color: rgba(8, 11, 18, 0.5);
   position: fixed;
@@ -266,21 +267,22 @@ main{
 }
 
 a.btn{
+  display: inline-block;
   border: 1px solid white;
   text-transform: uppercase;
   color: white;
-  line-height: 90px;
+  /* line-height: 90px; */
   font-size: 16px;
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 20px;
   margin-right: 20px;
   font-weight: bold;
-  transition: 1s linear;
+  transition: 1s ease;
 }
 
 .upgrade a.btn:hover{
-  transform: scale(2);
+  transform: scale(1.1);
 }
 /* .upgrade a.btn:hover{
   font-size: large;
@@ -494,11 +496,17 @@ ul.player-settings{
   font-size: 20px;
   color: white;
   padding: 10px 10px 0 10px;
+  cursor: pointer;
 }
 .player-btn li:nth-child(3){
   font-size: 35px;
   padding: 10px 20px 0 20px;
+  transition: all 1s linear;
 }
+.player-btn li:nth-child(3):hover{
+  transform: scale(1.1);
+}
+
 
 .timing{
   display: flex;

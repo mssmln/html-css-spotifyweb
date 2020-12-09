@@ -1,9 +1,6 @@
-ok il tag title dentro la classe h-s-l?
+ok il tag title dentro la classe h-s-l? si
 
-il footer con width calc o flex-grow?
-il footer non funziona quando restringo a 576px
-
-restringendo l'altezza del browser mi scompare parte del footer anche con min-height a 90px e come vedere anche ultima playlist? playlist non puoi quindi il problema non c'è più
+restringendo l'altezza del browser mi scompare parte del footer anche con min-height a 90px e come vedere anche ultima playlist? playlist non puoi quindi il problema non c'è più, e l'altro è il browser non puoi intervenire.
 
 correzione cristina--------------
 
@@ -27,3 +24,8 @@ add playlist l'ha fatto con + nel content e width e altezza, line height in px u
 sulla foto profile ha usato una altezza e larghezza e poi overflow: hidden al div contenente la img e ad img ha dato la larghezza uguale
 
 nomediv:hover allo span:before di add-playlist per l'effetto (il + e il title in un unico tag)
+
+parte footer:
+un div che ne racchiude 3 con flex e space-between
+
+per colorale la barra un div in un div con width 1 terzo con un differente colore ex 40% e 5%
