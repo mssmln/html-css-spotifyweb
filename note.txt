@@ -1,9 +1,29 @@
-opacity sulle img svg del menu di sinistra
-
-non si possono concatenare più pseudo elementi
-i numeri a fianchi della barra sono meglio con i pseudo o coi tag?
-
-flex wrap alla classe menu o alla media query?
-ho dato column alla classe heart-folder perchè con wrap non si abbassava a 768 ok?
-
 ok il tag title dentro la classe h-s-l?
+
+il footer con width calc o flex-grow?
+il footer non funziona quando restringo a 576px
+
+restringendo l'altezza del browser mi scompare parte del footer anche con min-height a 90px e come vedere anche ultima playlist? playlist non puoi quindi il problema non c'è più
+
+correzione cristina--------------
+
+h s l è stato fatto con ul li e non div come tu hai fatto + tag a e img
+ha usato span per scrivere home search e library
+vertical align middle alle img di home search e library con il testo nel tag span
+
+tutte le cose da rimuovere mettile nella sezione debug e commentala alla fine.
+
+agli li del menu di sinistra un padding-left di 17 + un border di 3px per dare
+l'efetto del verde quando fai hover, al resto ha dato 20px di padding.
+
+li a:hover img opacity 0 ad home, search e library
+
+
+overflow-y auto solo ad ul con una classe, ma serve una altezza del 100% sulla min-height (list-of-playlist)
+
+add playlist l'ha fatto con + nel content e width e altezza, line height in px uguale e con before sul tag span contenente crea PLAYLIST, annidato in un tag a.
+
+
+sulla foto profile ha usato una altezza e larghezza e poi overflow: hidden al div contenente la img e ad img ha dato la larghezza uguale
+
+nomediv:hover allo span:before di add-playlist per l'effetto (il + e il title in un unico tag)
