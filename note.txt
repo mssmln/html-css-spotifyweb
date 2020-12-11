@@ -1,7 +1,3 @@
-ok il tag title dentro la classe h-s-l? si
-
-restringendo l'altezza del browser mi scompare parte del footer anche con min-height a 90px e come vedere anche ultima playlist? playlist non puoi quindi il problema non c'è più, e l'altro è il browser non puoi intervenire.
-
 correzione cristina--------------
 
 h s l è stato fatto con ul li e non div come tu hai fatto + tag a e img

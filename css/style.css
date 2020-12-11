@@ -44,10 +44,6 @@ main{
   color: rgb(84, 87, 93);
 }
 
-.bigger-font{
-  font-size: 50px;
-}
-
 
 /* MENU */
 #menu{
@@ -71,6 +67,7 @@ main{
   max-width: 55%;
   margin-left: 15px;
 }
+/* /LOGO */
 
 /* LOGO MOBILE VERSION */
 .logo-small{
@@ -79,7 +76,6 @@ main{
 
 /* /LOGO MOBILE VERSION */
 
-/* /LOGO */
 
 /* H S L */
 .h-s-l{
@@ -650,9 +646,12 @@ ul.player-settings{
     width: 100%;
   }
 
-  #menu,
+  #menu{
+    width: 50px;
+  }
+
   .upgrade{
-    width: auto;
+    width: calc(100% - 50px);
   }
 
   a.btn{
@@ -660,6 +659,9 @@ ul.player-settings{
   }
 
   .profile .app{
+    justify-content: center;
+  }
+  .account{
     justify-content: center;
   }
 
